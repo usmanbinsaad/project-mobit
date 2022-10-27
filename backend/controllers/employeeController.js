@@ -13,7 +13,6 @@ exports.get_all_users = (req, res, next) => {
     )
     .catch((err) => next(err));
 };
-
 exports.insert_users = (req, res, next) => {
   empModal
     .create(req.body)
